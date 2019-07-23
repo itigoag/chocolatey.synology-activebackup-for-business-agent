@@ -23,6 +23,10 @@ installation with parameters.
  choco install synology-activebackup-for-business-agent --params="'/RemoveDesktopIcons /CleanStartmenu'"
 ```
 
+## Disclaimer
+
+These Chocolatey Packages only contain installation routines. The software itself is downloaded from the official sources of the software developer. ITIGO AG has no affilation with the software developer.
+
 ## Author
 
 - [Simon Bärlocher](https://sbaerlocher.ch)
