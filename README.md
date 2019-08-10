@@ -1,5 +1,7 @@
 # Chocolatey Package: synology-activebackup-for-business-agent
 
+[![Build Status](https://img.shields.io/travis/itigoag/chocolatey.synology-activebackup-for-business-agent?style=flat-square)](https://travis-ci.org/itigoag/chocolatey.synology-activebackup-for-business-agent) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=popout-square)](licence) [![Chocolatey](https://img.shields.io/chocolatey/v/synology-activebackup-for-business-agent?label=package%20version)](https://chocolatey.org/packages/synology-activebackup-for-business-agent) [![Chocolatey](https://img.shields.io/chocolatey/dt/synology-activebackup-for-business-agent?label=package%20downloads&style=flat-square)](https://chocolatey.org/packages/synology-activebackup-for-business-agent)
+
 ## Description
 
 Active Backup for Business is the all-in-one backup solution, designed for streamlining and enhancing data protection in businesses' diverse IT environments. Before protecting and backing up data stored on personal computers as well as physical Windows Servers, this Active Backup Agent is required to be installed on the target device to carry out the designed backup tasks and store the backed up data. As the management is centralized on the server end, most of the actions require either DSM or device's administrative privilege.
@@ -38,5 +40,4 @@ This project is under the MIT License. See the [LICENSE](licence) file for the f
 
 ## Copyright
 
-(c) 2019, Simon Bärlocher
 (c) 2019, ITIGO AG
