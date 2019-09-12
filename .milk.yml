@@ -2,12 +2,11 @@
 # chocomilk vars
 
 # Package Changelog
-changelog: 'https://www.synology.com/de-de/releaseNote/ActiveBackupBusinessAgent'
+changelog: 'https://release-monitoring.org/api/v2/projects/?name=Synology%20ActiveBackup%20for%20Business%20Agent'
 
 # Regex for Version
 version: "{{ register_changelog.content |
-  regex_search('.*Version:.*') |
-  regex_search('\\d.\\d.\\d-\\d\\d\\d\\d')
+  regex_search('([0-9]+.[0-9]+.[0-9]+-[0-9]+)')
   }}"
 
 # Download URL
