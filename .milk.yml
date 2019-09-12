@@ -1,0 +1,52 @@
+---
+# chocomilk vars
+
+# Package Changelog
+changelog: 'https://www.synology.com/de-de/releaseNote/ActiveBackupBusinessAgent'
+
+# Regex for Version
+version: "{{ register_changelog.content |
+  regex_search('.*Version:.*') |
+  regex_search('\\d.\\d.\\d-\\d\\d\\d\\d')
+  }}"
+
+# Download URL
+url: 'https://global.download.synology.com/download/Tools/ActiveBackupBusinessAgent/{{ version }}/Windows/i686/Synology%20Active%20Backup%20for%20Business%20Agent-{{ version }}-x86.msi'
+url64: 'https://global.download.synology.com/download/Tools/ActiveBackupBusinessAgent/{{ version }}/Windows/x86_64/Synology%20Active%20Backup%20for%20Business%20Agent-{{ version }}-x64.msi'
+
+searchreplace:
+  'tools/chocolateyinstall.ps1':
+    - regwxp: (^\s*[$]*url\s*=\s*)('.*')
+      replace: 'url = "{{ url }}"'
+    - regwxp: (^\s*[$]*url64\s*=\s*)('.*')
+      replace: 'url64 = "{{ url64 | default()}}"'
+    - regwxp: (^\s*[$]*checksum\s*=\s*)('.*')
+      replace: 'checksum = "{{ file_hash }}"'
+    - regwxp: (^\s*[$]*checksum64\s*=\s*)('.*')
+      replace: 'checksum64 = "{{ file64_hash  | default() }}"'
+
+# readme to description
+readme:
+  start: 5
+  end: 13
+
+# deploy
+deploy:
+  - provider: chocolatey
+    repository: 'https://nuget.itigo.tech/upload'
+    key: "{{ lookup('env','CHOCOLATEY_ITIGO_API_KEY') }}"
+  - provider: chocolatey
+    repository: 'https://push.chocolatey.org/'
+    key: "{{ lookup('env','CHOCOLATEY_ORG_API_KEY') }}"
+  - provider: github
+    name: 'itigo-bot'
+    email: 'chocomilk@itigo.ch'
+    url: github.com/itigoag/chocolatey.airtame.git
+    key: "{{ lookup('env','GITHUB_API_KEY') }}"
+
+# Notification
+notifications:
+  - provider: mattermost
+    url: 'https://matters.itigo.tech'
+    key: "{{ lookup('env','MATTERMOST_API_KEY') }}"
+    channel: 'software-packages'

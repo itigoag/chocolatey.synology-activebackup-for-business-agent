@@ -1,15 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
-
+<?xml version='1.0' encoding='UTF-8'?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>synology-activebackup-for-business-agent</id>
     <title>Synology ActiveBackup for Business Agent</title>
-    <version>2.0.4.0621</version>
+    <version>2.0.4.0</version>
     <authors>Synology Inc.</authors>
     <owners>ITIGO AG</owners>
     <packageSourceUrl>https://github.com/itigoag/chocolatey.synology-activebackup-for-business-agent</packageSourceUrl>
     <projectUrl>https://www.synology.com/de-de/releaseNote/ActiveBackupBusinessAgent</projectUrl>
-    <iconUrl>https://rawgit.com/itigoag/chocolatey.synology-activebackup-for-business-agent/master/icon/synology-activebackup-for-business-agent.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/itigoag/chocolatey.synology-activebackup-for-business-agent@master/icon/synology-activebackup-for-business-agent.png</iconUrl>
     <tags>Synology ActiveBackup for Business Agent</tags>
     <copyright>Synology Inc.</copyright> 
     <licenseUrl>https://www.synology.com/de-de/releaseNote/ActiveBackupBusinessAgent</licenseUrl> 
@@ -25,6 +24,6 @@ Active Backup for Business is the all-in-one backup solution, designed for strea
 ]]></description>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
+    <file src="tools/**" target="tools"/>
   </files>
 </package>
