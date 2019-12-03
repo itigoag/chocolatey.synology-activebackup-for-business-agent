@@ -8,8 +8,14 @@ Active Backup for Business is the all-in-one backup solution, designed for strea
 
 ## Package Parameters
 
-- `/RemoveDesktopIcons` Removes the desktop icon from Synology ActiveBackup for Business Agent.
-- `/CleanStartmenu` Removes frequently used Synology ActiveBackup for Business Agent shortcuts from the Startmenu.
+- `/Address:` The IP address of the Synology NAS.
+- `/Username:` The username for accessing the Synology NAS.
+- `/Password:` The password for accessing the Synology NAS.
+- `/RemoveShortcut` Removes Shortcut from Synology ActiveBackup for Business Agent.
+- `/ProxyAddress:` Proxy Adresse only when your Synology NAS is required to be accessed via proxy.
+- `/ProxyPort:` Proxy Port only when your Synology NAS is required to be accessed via proxy.
+- `/ProxyUsername:` Proxy Username only when your Synology NAS is required to be accessed via proxy.
+- `/ProxyPassword:` Proxy Password only when your Synology NAS is required to be accessed via proxy.
 
 ## Installation
 
@@ -22,7 +28,7 @@ installation without parameters.
 installation with parameters.
 
 ```ps1
- choco install synology-activebackup-for-business-agent --params="'/RemoveDesktopIcons /CleanStartmenu'"
+ choco install synology-activebackup-for-business-agent --params="'/Address:192.168.1.1 /Username:Synology /Password:MeinPass /RemoveShortcut'"
 ```
 
 ## Disclaimer
