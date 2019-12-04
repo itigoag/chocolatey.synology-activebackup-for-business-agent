@@ -8,18 +8,18 @@ Active Backup for Business is the all-in-one backup solution, designed for strea
 
 ## Package Parameters
 
-- `/Address:` The IP address of the Synology NAS.
+- `/Address:` The hostname or IP address of the Synology NAS.
 - `/Username:` The username for accessing the Synology NAS.
 - `/Password:` The password for accessing the Synology NAS.
-- `/RemoveShortcut` Removes Shortcut from Synology ActiveBackup for Business Agent.
-- `/ProxyAddress:` Proxy Adresse only when your Synology NAS is required to be accessed via proxy.
-- `/ProxyPort:` Proxy Port only when your Synology NAS is required to be accessed via proxy.
-- `/ProxyUsername:` Proxy Username only when your Synology NAS is required to be accessed via proxy.
-- `/ProxyPassword:` Proxy Password only when your Synology NAS is required to be accessed via proxy.
+- `/RemoveShortcut` Removes shortcut from Synology ActiveBackup for Business Agent.
+- `/ProxyAddress:` Proxy address only when your Synology NAS is required to be accessed via proxy.
+- `/ProxyPort:` Proxy port only when your Synology NAS is required to be accessed via proxy.
+- `/ProxyUsername:` Proxy username only when your Synology NAS is required to be accessed via proxy.
+- `/ProxyPassword:` Proxy password only when your Synology NAS is required to be accessed via proxy.
 
 ## Installation
 
-installation without parameters.
+Installation without parameters.
 
 ```ps1
  choco install synology-activebackup-for-business-agent
@@ -28,12 +28,12 @@ installation without parameters.
 installation with parameters.
 
 ```ps1
- choco install synology-activebackup-for-business-agent --params="'/Address:192.168.1.1 /Username:Synology /Password:MeinPass /RemoveShortcut'"
+ choco install synology-activebackup-for-business-agent --params="'/Address:192.168.1.1 /Username:Synology /Password:MyPassword /RemoveShortcut'"
 ```
 
 ## Disclaimer
 
-These Chocolatey Packages only contain installation routines. The software itself is downloaded from the official sources of the software developer. ITIGO AG has no affilation with the software developer.
+These Chocolatey packages only contain installation routines. The software itself is downloaded from the official sources of the software developer. ITIGO AG has no affilation with the software developer.
 
 ## Author
 
