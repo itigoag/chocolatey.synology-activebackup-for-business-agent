@@ -19,14 +19,14 @@ Active Backup for Business is the all-in-one backup solution, designed for strea
 
 ## Package Parameters
 
-- `/Address:` The IP address of the Synology NAS.
+- `/Address:` The hostname or IP address of the Synology NAS.
 - `/Username:` The username for accessing the Synology NAS.
 - `/Password:` The password for accessing the Synology NAS.
-- `/RemoveShortcut` Removes Shortcut from Synology ActiveBackup for Business Agent.
-- `/ProxyAddress:` Proxy Adresse only when your Synology NAS is required to be accessed via proxy.
-- `/ProxyPort:` Proxy Port only when your Synology NAS is required to be accessed via proxy.
-- `/ProxyUsername:` Proxy Username only when your Synology NAS is required to be accessed via proxy.
-- `/ProxyPassword:` Proxy Password only when your Synology NAS is required to be accessed via proxy.
+- `/RemoveShortcut` Removes shortcut from Synology ActiveBackup for Business Agent.
+- `/ProxyAddress:` Proxy address only when your Synology NAS is required to be accessed via proxy.
+- `/ProxyPort:` Proxy port only when your Synology NAS is required to be accessed via proxy.
+- `/ProxyUsername:` Proxy username only when your Synology NAS is required to be accessed via proxy.
+- `/ProxyPassword:` Proxy password only when your Synology NAS is required to be accessed via proxy.
 ]]></description>
   </metadata>
   <files>
