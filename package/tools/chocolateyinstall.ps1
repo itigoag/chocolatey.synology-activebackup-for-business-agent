@@ -44,11 +44,11 @@ Write-Output $args
 $packageArgs = @{
     packageName    = $env:ChocolateyPackageName
     fileType       = 'msi'
-    url            = "https://global.download.synology.com/download/Tools/ActiveBackupBusinessAgent/2.1.0-0993/Windows/i686/Synology%20Active%20Backup%20for%20Business%20Agent-2.1.0-0993-x86.msi"
-    url64          = "https://global.download.synology.com/download/Tools/ActiveBackupBusinessAgent/2.1.0-0993/Windows/x86_64/Synology%20Active%20Backup%20for%20Business%20Agent-2.1.0-0993-x64.msi"
-    checksum       = "9047F1D924E4CE6D871846A6C281BDC9FEC6E48A44BE5FEDDC32ABBBDD4313483ED6D3DBD9D7B2AF2279E08952FFA0660AD5F1F24410F571909AA2AF4CB60BF2"
+    url            = "https://global.download.synology.com/download/Tools/ActiveBackupBusinessAgent/2.1.1-1125/Windows/i686/Synology%20Active%20Backup%20for%20Business%20Agent-2.1.1-1125-x86.msi"
+    url64          = "https://global.download.synology.com/download/Tools/ActiveBackupBusinessAgent/2.1.1-1125/Windows/x86_64/Synology%20Active%20Backup%20for%20Business%20Agent-2.1.1-1125-x64.msi"
+    checksum       = "DAC9DBA09FA2D06A0D9B9DF15B5AA58D8CB112041148677EC7069B16D4423B30031A77C984B81551FEB71F362DFDC34653EA9B9673678350E161830564C8FCA9"
     checksumType   = 'SHA512'
-    checksum64     = "1E40F626F890FC44DB999846C68BF2B7AFEBACACA3E1E935906DFB2798A7376CCC1E377889F712A48FF8BEC61D4558D4D731F15850976BA97D2740AD95EE96CD"
+    checksum64     = "1459A3458BB71262765446040A1DC228808FCF176C1794ED33D6681114454ED7C3CC8687B09AA9810F053F59FF3151B88EA98BA87F0FD24D62D1BAE3484499DA"
     checksumType64 = 'SHA512'
     silentArgs     = "$($args) /qn"
     ValidExitCodes = @(0, 1000, 1101)

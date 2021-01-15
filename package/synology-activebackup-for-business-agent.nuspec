@@ -3,7 +3,7 @@
   <metadata>
     <id>synology-activebackup-for-business-agent</id>
     <title>Synology ActiveBackup for Business Agent</title>
-    <version>2.1.0.0993</version>
+    <version>2.1.1.1125</version>
     <authors>Synology Inc.</authors>
     <owners>ITIGO AG</owners>
     <packageSourceUrl>https://github.com/itigoag/chocolatey.synology-activebackup-for-business-agent</packageSourceUrl>
